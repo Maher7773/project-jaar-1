@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+nav{
+  width: 100%;
+  height: 10vh;
+}
+
+.nav-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo{
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo span{
+  color: #810400;
+  text-shadow: 0 0 10px #810400;
+}
+
+.nav-container .links{
+  display: flex;
+}
+
+.nav-container .links a{
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
+}
+
+.nav-container .links a:hover::before{
+  width: 100%;
+}
+
+.nav-container .links a:hover{
+  color: #810400;
+}
+
+section .title span::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #8e0000;
+  left: 0;
+  bottom: 0;
+}
+
+.nav-container .links a:hover::before {
+  width: 100%;
+}
+
+a {
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.nav-container .links a:hover {
+  color: #000000;
+  background-color: white;
+}
+
+section {
+  width: 100%;
+  min-height: 90vh;
+}
+
+section .main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.main-container .image {
+  width: 500px;
+  height: 70vh;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 40px 10px #810400, 0 0 50px #810400;
+}
+
+.main-container .image img {
+  width: 500px;
+  height: 70vh;
+  scale: 0.8;
+  border-radius: 80%;
+}
+
+.main-container .content {
+  color: white;
+  width: 40%;
+}
+
+.content h1 {
+  font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+}
+
+.content h1 span {
+  color: #810400;
+  text-shadow: 0 0 10px #810400;
+}
+
+.content .typewriter {
+  font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+  font-weight: 600;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  text-align: center;
+}
+
+.gameicon img {
+  width: 200px;
+  height: auto;
+}
+
+.content p {
+  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+  margin: 10px 0;
+  color: white;
+}
+
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid #810400;
+  border-radius: 50%;
+  color: #810400;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+
+.social-links i:hover {
+  scale: 1.3;
+  color: white;
+  background-color: #810400;
+}
+
+section .content {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .left img#ekko {
+  width: 100%;
+  height: auto;
+  max-width: 400px; 
+  border-radius: 5px 50%;
+  position: relative;
+  box-shadow: 0 0 20px 5px #810400, 0 0 40px 10px #810400;
+}
+
+.about .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section .title span {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.about .about-details .left {
+  width: 45%;
+}
+
+.about .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 5px 50%;
+  position: relative;
+  box-shadow: 0 0 20px 5px #810400, 0 0 40px 10px #810400;
+}
+
+.about-details .right {
+  width: 55%;
+}
+
+.right p span {
+  color: #810400;
+}
+
+.about-details .right .exp-area {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+}
+
+
+section .topic {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about-details .right p {
+  text-align: justify;
+  color: white;
+}
+
+section {
+  margin: 1px 0;
+}
+
+.hobbies {
+  background: black;
+}
+
+.hobbies .content {
+  padding: 40px 0;
+}
+
+.hobbies .title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.hobbies .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hobbies .box {
+  margin: 20px 0;
+  width: calc(100% / 2 - 20px);
+  text-align: center;
+  border-radius: 12px;
+  padding: 30px 10px;
+  box-shadow: 0 0px 10px 2px white;
+  cursor: default;
+  color: white;
+  border: 1px solid white;
+  transition: all 0.4s ease;
+}
+
+.hobbies .box:hover {
+  background: #810400;
+  border: 1px solid #810400;
+  box-shadow: 0 0 30px 10px #810400;
+}
+
+.hobbies .box .icon {
+  height: 50px;
+  width: 50px;
+  background: #810400;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 auto 10px auto;
+  transition: all 0.4s ease;
+}
+
+.hobbies .box:hover .icon {
+  background-color: #fff;
+  color: #810400;
+}
+
+.hobbies .box:hover .topic,
+.hobbies .box:hover p {
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.contact {
+  background: black;
+}
+
+.contact .content {
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .text {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  text-align: center;
+  color: #810400;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #810400;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #810400;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer {
+  background-color: #810400;
+  display: flex;
+  justify-content: center;
+}
